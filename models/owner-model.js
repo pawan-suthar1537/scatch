@@ -14,20 +14,19 @@ const ownerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  
-  
+
   products: {
-    type:Array,
-    default:[]
+    type: Array,
+    default: [],
   },
-  
+
   picture: {
     type: String,
   },
-  gstin:{
-        type:String,
-    required:true
-  }
+  gstin: {
+    type: String,
+    // required:true
+  },
 });
 
 module.exports = mongoose.model("Owner", ownerSchema);
